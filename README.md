@@ -31,5 +31,5 @@ erlc day04/main.erl
 Run on example data:
 
 ```
-erl  -s main start -s init stop
+erl  -s main start ./day04/task.txt -s init stop
 ```
