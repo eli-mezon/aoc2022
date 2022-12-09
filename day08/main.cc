@@ -102,7 +102,6 @@ public:
             result += 1;
             if (iHeights[idx] >= height) break;
         }
-        std::cout << result << ",";
         return result;
     }
     int ScoreSouthEdge(int aPosition)
@@ -117,7 +116,6 @@ public:
             result += 1;
             if (iHeights[idx] >= height) break;
         }
-        std::cout << result << ",";
         return result;
     }
     int ScoreEastEdge(int aPosition)
@@ -132,7 +130,6 @@ public:
             result += 1;
             if (iHeights[idx] >= height) break;
         }
-        std::cout << result << ",";
         return result;
     }
     int ScoreWestEdge(int aPosition)
@@ -147,7 +144,6 @@ public:
             result += 1;
             if (iHeights[idx] >= height) break;
         }
-        std::cout << result << ",";
         return result;
     }
     int ScenicScore(int aPosition)
@@ -156,7 +152,6 @@ public:
             * ScoreEastEdge(aPosition)
             * ScoreSouthEdge(aPosition)
             * ScoreWestEdge(aPosition);
-        std::cout << " = " << result << std::endl;
         return result;
     }
 private: // IScoreCalculator
